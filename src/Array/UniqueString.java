@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Arrays;
+
 public class UniqueString {
     public static void main(String[] args) {
 
@@ -7,7 +9,6 @@ public class UniqueString {
 
         for (String each : words) {
             int count = 0;
-
             for (String element : words) {
                 if(element.equals(each)){
                     count++;
@@ -15,7 +16,7 @@ public class UniqueString {
             }
 
             if(count == 1){   //UNIQUE
-         // if(count == 2){  //DUPLICATES
+       //  if(count == 2){  //DUPLICATES
                 System.out.println(each);
             }
 
